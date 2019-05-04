@@ -14,4 +14,28 @@ The APIs specified below support the creation and retrieval of representations o
 1. Clone the repo using your favourite IDE
 2. Search and run the class UserRealmServiceImplTest
 
+## Creating a realm
 
+### XML Representation
+POST /service/user/realm HTTP/1.1
+Content-Type: application/xml; charset=utf-8
+<realm name="realmName">
+<description>realmDescription</description>
+</realm>
+
+### JSON Representation
+POST /service/user/realm HTTP/1.1
+Content-Type: application/json; charset=utf-8
+{
+"name": "realmName",
+"description": "realmDescription"
+}
+
+## Retrieving a realm
+### XML Representation
+GET /service/user/realm/{id} HTTP/1.1
+Accept: application/xml
+
+###JSON Representation
+GET /service/user/realm/{id} HTTP/1.1
+Accept: application/json
