@@ -4,10 +4,11 @@ The APIs specified below support the creation and retrieval of representations o
 
 ## Getting Started
 
-1. Download the user-realm war file from the repo
+1. Gradle build to create the project war file
 2. Download and install Tomcat 8 and MySql
 3. Create a MySql user with username root and password root
-4. Start Tomcat and load the war file through the manager https://www.webucator.com/how-to/how-deploy-web-application-using-the-apache-tomcat-manager-windows.cfm
+4. Run the SQL found in user-realm-schema.sql
+5. Start Tomcat and load the war file through the manager https://www.webucator.com/how-to/how-deploy-web-application-using-the-apache-tomcat-manager-windows.cfm
 
 ## Running the tests
 
