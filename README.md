@@ -4,7 +4,7 @@ The APIs specified below support the creation and retrieval of representations o
 
 ## Getting Started
 
-1. Gradle build to create the project war file or download from https://drive.google.com/open?id=11x7Kwp5LoRI9okdxqQTFTaAkHIhdt0Io
+1. Gradle build to create the project war file or download from https://drive.google.com/open?id=1m5D6tsexYj9RRra5pbNXP2X9PQF3-9v2
 2. Download and install Tomcat 8 and MySql
 3. Create a MySql user with username root and password root
 4. Run the SQL found in user-realm-schema.sql
