@@ -1,6 +1,7 @@
 package com.user.realm.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,13 +19,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 @NoArgsConstructor
 public class CreateUserRealmRequest {
 
-    @XmlElement(name = "name")
+    @JacksonXmlProperty(localName = "name")
     @JsonProperty("name")
-    @FormParam("name")
     private String name;
 
-    @XmlElement(name = "description")
+    @JacksonXmlProperty(localName = "description")
     @JsonProperty("description")
-    @FormParam("description")
     private String description;
 }

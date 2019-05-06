@@ -1,34 +1,34 @@
 package com.user.realm.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import com.user.realm.model.UserRealmEntity;
 import lombok.Getter;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 
 @Getter
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
-@XmlRootElement(name = "realm")
-@XmlAccessorType(XmlAccessType.FIELD)
+@JacksonXmlRootElement(localName = "realm")
+@XmlAccessorType(XmlAccessType.NONE)
 public class UserRealmResponse {
 
-    @XmlElement(name = "id")
+    @JacksonXmlProperty(isAttribute = true, localName = "id")
     @JsonProperty("id")
     private String id;
 
-    @XmlElement(name = "name")
+    @JacksonXmlProperty(isAttribute = true, localName = "name")
     @JsonProperty("name")
     private String realmName;
 
-    @XmlElement(name = "description")
+    @JacksonXmlProperty(localName = "description")
     @JsonProperty("description")
     private String realmDescription;
 
-    @XmlElement(name = "key")
+    @JacksonXmlProperty(localName = "key")
     @JsonProperty("key")
     private String realmKey;
 

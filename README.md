@@ -19,7 +19,8 @@ The APIs specified below support the creation and retrieval of representations o
 
 ### XML Representation
 POST /service/user/realm HTTP/1.1
-Content-Type: application/xml; charset=utf-8
+
+Content-Type: application/xml; charset=utf-8; Accept: application/xml
 ```
 <realm name="realmName">
 <description>realmDescription</description>
@@ -28,6 +29,7 @@ Content-Type: application/xml; charset=utf-8
 
 ### JSON Representation
 POST /service/user/realm HTTP/1.1
+
 Content-Type: application/json; charset=utf-8
 ```
 {
